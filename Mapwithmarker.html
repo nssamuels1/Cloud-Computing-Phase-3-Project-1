@@ -27,6 +27,18 @@
           position: African_Burial_Ground_National_Monument,
           map: map,
         });
+        // The location of the Schomburg Center for Research in Black Culture
+        const Schomburg_Center_for_Research_in_Black_Culture = { lat:40.814426, lng:-73.940864 };
+        // The map, centered at New York City
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: Schomburg_Center_for_Research_in_Black_Culture,
+        });
+        // The marker, positioned at New York City
+        const marker = new google.maps.Marker({
+          position: Schomburg_Center_for_Research_in_Black_Culture,
+          map: map,
+        });  
       }
     </script>
   </head>

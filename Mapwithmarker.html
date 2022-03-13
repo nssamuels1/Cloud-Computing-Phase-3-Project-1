@@ -61,6 +61,22 @@
           position: Home_of_Shirley_Chisholm_in_Brooklyn,
           map: map,
         });
+        const contentString =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          '<h1 id="firstHeading" class="firstHeading">African Burial Ground National Monument</h1>' +
+          '<div id="bodyContent">' +
+          "<p><b>African Burial Ground National Monument</b>, is the oldest and largest known exavated burial ground in North America " +
+          "for both free and enslaved Africans. It protects the historic role slavery played in building New York. " +
+          <a class="more" href="/afbg/learn/historyculture/index.htm" title="A Sacred Space in Manhattan" id="anch_20">Read More</a></p>" +
+          '<p>Official Site: , <a href="https://www.nps.gov/afbg/index.htm">' +
+          "https://www.nps.gov/afbg/index.htm</a>" +
+          "</div>" +
+          "</div>";
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+        });  
       }
     </script>
   </head>

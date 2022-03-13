@@ -38,7 +38,7 @@
           map: map,
         });
         
-        // The location of Langston Hughes' Home in Harlem
+        // The location of the Home of Langston Hughes Home in Harlem
         const Home_of_Langston_Hughes_in_Harlem = { lat:40.80730, lng:-73.94066 };
         // The marker, positioned at Langston Hughes' Home in Harlem
         const marker3 = new google.maps.Marker({
@@ -46,7 +46,7 @@
           map: map,
         });
         
-        // The location of James Baldwin's Home in Harlem
+        // The location of the Home of James Baldwin in Harlem
         const Home_of_James_Baldwin_in_Harlem = { lat:40.77756, lng:-73.98033 };
         // The marker, positioned at James Baldwin's Home in Harlem
         const marker4 = new google.maps.Marker({
@@ -54,13 +54,14 @@
           map: map,
         });
         
-        // The location of Shirley Chisholm's Home in Brooklyn
+        // The location of the Home of Shirley Chisholm in Brooklyn
         const Home_of_Shirley_Chisholm_in_Brooklyn = { lat:40.67120, lng:-73.94413 };
         // The marker, positioned at Shirley Chisholm's Home in Brooklyn
         const marker5 = new google.maps.Marker({
           position: Home_of_Shirley_Chisholm_in_Brooklyn,
-          map: map,
+          map: map,  
         });
+        
         const contentString =
           '<div id="content">' +
           '<div id="siteNotice">' +
@@ -69,20 +70,102 @@
           '<div id="bodyContent">' +
           "<p><b>African Burial Ground National Monument</b>, is the oldest and largest known exavated burial ground in North America " +
           "for both free and enslaved Africans. It protects the historic role slavery played in building New York. " +
-          '<p>Official Site: , <a href="https://www.nps.gov/afbg/index.htm">' +
+          '<p>Official Site: <a href="https://www.nps.gov/afbg/index.htm">' +
           "https://www.nps.gov/afbg/index.htm</a>" +
           "</div>" +
           "</div>";
+        
+        const contentString =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          '<h1 id="firstHeading" class="firstHeading">Schomburg Center for Research in Black Culture</h1>' +
+          '<div id="bodyContent">' +
+          "<p><b>Schomburg Center for Research in Black Culture</b>, is a world-leading cultural institution devoted to the research, " +
+          "preservation, and exhibition of materials focused on African American, African Diaspora and African experiences. " +
+          '<p>Official Site: <a href="https://www.nypl.org/locations/schomburg">' +
+          "https://www.nypl.org/locations/schomburg</a>" +
+          "</div>" +
+          "</div>";
+        
+        const contentString =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          '<h1 id="firstHeading" class="firstHeading">Home of Langston Hughes in Harlem</h1>' +
+          '<div id="bodyContent">' +
+          "<p><b>Home of Langston Hughes in Harlem</b>, was the residence of the Poet Langston Hughes, one of the foremost figures " +
+          "of the Harlem Renaissance during the last two decades of his life, on the top floor. During his time here, he wrote such notable " +
+          "works as <q>Montage of a Dream Deferred</q> and <q>I Wonder as I Wander.</q> + 
+          '<p>Official Site: <a href="https://www.nycgo.com/attractions/the-langston-hughes-house/">' +
+          "https://www.nycgo.com/attractions/the-langston-hughes-house/</a>" +
+          "</div>" +
+          "</div>";
+        
+        const contentString =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          '<h1 id="firstHeading" class="firstHeading">Home of James Baldwin in Harlem</h1>' +
+          '<div id="bodyContent">' +
+          "<p><b>Home of James Baldwin in Harlem</b>, known as the Baldwin Residence was the final residence of American author and civil rights " +
+          "activist from 1965-1987. While living at this residence, eight of his works were performed or televised and he published fourteen written " +
+          "works. This included novels, essays, plays, screenplays, dialogues, and a book of poetry. James Baldwin purchased the building in 1965. " +
+          '<p>Official Site: <a href="https://www.nps.gov/places/james-baldwin-residence-new-york-city.htm">' +
+          "https://www.nps.gov/places/james-baldwin-residence-new-york-city.htm</a>" +
+          "</div>" +
+          "</div>";
+        
+        const contentString =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          '<h1 id="firstHeading" class="firstHeading">Home of Shirley Chisholm in Brooklyn</h1>' +
+          '<div id="bodyContent">' +
+          "<p><b>Home of Shirley Chisholm in Brooklyn</b>, is a world-leading cultural institution devoted to the research, " +
+          "preservation, and exhibition of materials focused on African American, African Diaspora and African experiences. " +
+          '<p>Official Site: <a href="https://www.nypl.org/locations/schomburg">' +
+          "https://www.nypl.org/locations/schomburg</a>" +
+          "</div>" +
+          "</div>";
         const infowindow = new google.maps.InfoWindow({
-          content: contentString,
+          content: contentString,   
         });
-      
+        
         marker1.addListener("click", () => {
           infowindow.open({
             anchor: marker1,
             map,
             shouldFocus: false,
-          }); 
+          });
+          
+        marker2.addListener("click", () => {
+          infowindow.open({
+            anchor: marker2,
+            map,
+            shouldFocus: false,
+          });
+          
+        marker3.addListener("click", () => {
+          infowindow.open({
+            anchor: marker3,
+            map,
+            shouldFocus: false,
+          });
+          
+        marker4.addListener("click", () => {
+          infowindow.open({
+            anchor: marker4,
+            map,
+            shouldFocus: false,
+          });
+            
+       marker5.addListener("click", () => {
+          infowindow.open({
+            anchor: marker5,
+            map,
+            shouldFocus: false,
+          });   
         });  
       }
     </script>

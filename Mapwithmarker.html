@@ -76,19 +76,14 @@
         const infowindow = new google.maps.InfoWindow({
           content: contentString,
         });
-        const marker1 = new google.maps.Marker({
-          position: African_Burial_Ground_National_Monument,
-          map,
-          title: "African Burial Ground National Monument",
-        });
       
         marker.addListener("click", () => {
           infowindow.open({
-          anchor: marker1,
-          map,
-          shouldFocus: false,
-        }); 
-      });  
+            anchor: marker1,
+            map,
+            shouldFocus: false,
+          }); 
+        });  
       }
     </script>
   </head>

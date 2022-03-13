@@ -69,14 +69,26 @@
           '<div id="bodyContent">' +
           "<p><b>African Burial Ground National Monument</b>, is the oldest and largest known exavated burial ground in North America " +
           "for both free and enslaved Africans. It protects the historic role slavery played in building New York. " +
-          <a class="more" href="/afbg/learn/historyculture/index.htm" title="A Sacred Space in Manhattan" id="anch_20">Read More</a></p>" +
           '<p>Official Site: , <a href="https://www.nps.gov/afbg/index.htm">' +
           "https://www.nps.gov/afbg/index.htm</a>" +
           "</div>" +
           "</div>";
         const infowindow = new google.maps.InfoWindow({
           content: contentString,
-        });  
+        });
+        const marker1 = new google.maps.Marker({
+          position: African_Burial_Ground_National_Monument,
+          map,
+          title: "African Burial Ground National Monument",
+        });
+      
+        marker.addListener("click", () => {
+          infowindow.open({
+          anchor: marker1,
+          map,
+          shouldFocus: false,
+        }); 
+      });  
       }
     </script>
   </head>

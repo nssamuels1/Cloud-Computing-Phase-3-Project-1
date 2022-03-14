@@ -62,7 +62,7 @@
           map: map,  
         });
         
-        const contentString =
+        const contentString1 =
           '<div id="content">' +
           '<div id="siteNotice">' +
           "</div>" +
@@ -71,11 +71,11 @@
           "<p><b>African Burial Ground National Monument</b>, is the oldest and largest known exavated burial ground in North America " +
           "for both free and enslaved Africans. It protects the historic role slavery played in building New York. " +
           '<p>Official Site: <a href="https://www.nps.gov/afbg/index.htm">' +
-          "https://www.nps.gov/afbg/index.htm</a>" +
+          "https://www.nps.gov/afbg/index.htm</a> " +
           "</div>" +
           "</div>";
         
-        const contentString =
+        const contentString2 =
           '<div id="content">' +
           '<div id="siteNotice">' +
           "</div>" +
@@ -84,11 +84,11 @@
           "<p><b>Schomburg Center for Research in Black Culture</b>, is a world-leading cultural institution devoted to the research, " +
           "preservation, and exhibition of materials focused on African American, African Diaspora and African experiences. " +
           '<p>Official Site: <a href="https://www.nypl.org/locations/schomburg">' +
-          "https://www.nypl.org/locations/schomburg</a>" +
+          "https://www.nypl.org/locations/schomburg</a> " +
           "</div>" +
           "</div>";
         
-        const contentString =
+        const contentString3 =
           '<div id="content">' +
           '<div id="siteNotice">' +
           "</div>" +
@@ -102,7 +102,7 @@
           "</div>" +
           "</div>";
         
-        const contentString =
+        const contentString4 =
           '<div id="content">' +
           '<div id="siteNotice">' +
           "</div>" +
@@ -116,7 +116,7 @@
           "</div>" +
           "</div>";
         
-        const contentString =
+        const contentString5 =
           '<div id="content">' +
           '<div id="siteNotice">' +
           "</div>" +
@@ -130,7 +130,7 @@
           "</div>" +
           "</div>";
         const infowindow = new google.maps.InfoWindow({
-          content: contentString,   
+          content: contentString1, contentString2, contentString3, contentString4, contentString5,   
         });
         
         marker1.addListener("click", () => {

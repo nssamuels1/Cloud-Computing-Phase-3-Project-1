@@ -130,23 +130,30 @@
           "</div>" +
           "</div>";
         const infowindow = new google.maps.InfoWindow({
-          content: contentString1, contentString2, contentString3, contentString4, contentString5,   
+          content: contentString3, contentString4, contentString5,   
         });
         
-        marker1.addListener("click", () => 
+        marker1.addListener("click", () => { 
+          const infowindow = new google.maps.InfoWindow({
+          content: contentString1
+          });                  
           infowindow.open({
             anchor: marker1,
             map,
             shouldFocus: false,
-          }));
-        
+          })
+        });
           
-        marker2.addListener("click", () => 
+        marker2.addListener("click", () => { 
+          const infowindow = new google.maps.InfoWindow({
+          content: contentString2
+          });                  
           infowindow.open({
             anchor: marker2,
             map,
             shouldFocus: false,
-          }));
+          })
+        });
           
         marker3.addListener("click", () => 
           infowindow.open({

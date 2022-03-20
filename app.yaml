@@ -1,4 +1,4 @@
 runtime: custom
 env: flex
 skip_files:
-- ^$
+- ^map.html$
